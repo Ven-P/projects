@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Landing page</title>
+        <link rel = "stylesheet" href = "css/style.css" />
+    </head>
+    <body>
+        <section class = "showcase">
+            <header>
+                <h2 class="logo">TRAVEL</h2>
+                <div class="hamburger"></div>
+            </header>
+            <video autoplay loop muted src="videos/travel.mp4">Travel video</video>
+            <div class="overlay"></div>
+            <main >
+                <div class = "text">        
+                    <h3>NEVER STOP</h3>
+                    <h4>EXPLORING THE WORLD</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum qui nobis nostrum eius ut obcaecati sed ad praesentium laborum vel.
+                    </p>
+                    <a href="#">EXPLORE</a>
+                </div>
+            </main>
+            <footer class = "social">
+                <ul >
+                    <li><a href="#"><img src = "images/facebook.png" /></a></li>
+                    <li><a href="#"><img src = "images/twitter.png" /></a></li>
+                    <li><a href="#"><img src = "images/instagram.png" /></a></li>
+                </ul>
+            </footer>
+        </section>      
+        <menu class = "menu">
+    
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </menu>
+    </body>
+    <script>
+        const menu = document.querySelector(".hamburger")
+        const showcase = document.querySelector(".showcase")
+
+        menu.addEventListener("click", () => {
+                showcase.classList.toggle("inactive")
+                menu.classList.toggle("close")
+        })
+    </script>
+</html>
